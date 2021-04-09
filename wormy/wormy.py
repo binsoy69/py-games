@@ -7,8 +7,8 @@ import random, pygame, sys
 from pygame.locals import *
 
 FPS = 15
-WINDOWWIDTH = 640
-WINDOWHEIGHT = 480
+WINDOWWIDTH = 1080
+WINDOWHEIGHT = 720
 CELLSIZE = 20
 assert WINDOWWIDTH % CELLSIZE == 0, "Window width must a multiple of cell size."
 assert WINDOWHEIGHT % CELLSIZE == 0, "Window height must a multiple of cell size."
@@ -126,7 +126,7 @@ def checkForKeyPress():
 
 
 def showStartScreen():
-  titleFont = pygame.font.Font('freesansbold.ttf', 100)
+  titleFont = pygame.font.Font('freesansbold.ttf', 200)
   titleSurf1 = titleFont.render('Wormy!', True, WHITE, DARKGREEN)
   titleSurf2 = titleFont.render('Wormy!', True, GREEN)
 
